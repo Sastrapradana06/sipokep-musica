@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height:900px;
+}
+
+.user {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    .person {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        img {
+            margin-left: 13px;
+            margin-top: 5px;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background-position: center;
+            margin-right: 15px;
+        }
+        .teks {
+            h2 {
+                font-size: 1rem;
+            }
+            p {
+                display: block;
+                font-size: .7rem;
+                color: #9A9A9A;
+            }
+        }
+    }
+}
+
+.releases {
+    width: 100%;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    .title-releases {
+        p {
+            margin-bottom: -5px;
+            margin-left: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            font-size: .9rem;
+            color: crimson;
+        }
+    }
+    .card-releases {
+        padding: 10px;
+        display: grid;
+        grid-auto-flow: column;
+        scroll-behavior: auto;
+        gap: 1rem;
+        overflow-y: auto;
+        overscroll-behavior-x: x mandatory;
+        scrollbar-width: none;
+        margin-left: 5px;
+        .card {
+            display: flex;
+            flex-direction: column;
+        }
+        .card-1, .card-2, .card-3, .card-4 {
+            .img {
+                width: 110px;
+                height: 110px;
+                border-radius: 5px;
+            }
+            .teks {
+                margin-top: 5px;
+                font-family: 'Poppins', sans-serif;
+                h4 {
+                    font-size: .6rem;
+                    color: black;
+                }
+                p {
+                    font-size: .6rem;
+                    color: #9A9A9A;
+                }
+            }
+        }
+    }
+}
+
+.artist {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    .title-artist {
+        p {
+            margin-bottom: -5px;
+            margin-left: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            font-size: .9rem;
+            color: crimson;
+        }
+    }
+    .card-artist {
+        padding: 10px;
+        display: grid;
+        grid-auto-flow: column;
+        scroll-behavior: auto;
+        gap: 1rem;
+        overflow-y: auto;
+        overscroll-behavior-x: x mandatory;
+        scrollbar-width: none;
+        margin-left: 5px;
+        .card {
+            display: flex;
+            flex-direction: column;
+        }
+        .card-1, .card-2, .card-3, .card-4 {
+            .img {
+                width: 78px;
+                height: 80px;
+                border-radius: 5px;
+            }
+            .teks {
+                margin-top: 5px;
+                font-family: 'Poppins', sans-serif;
+                h4 {
+                    font-size: .7rem;
+                    color: #9A9A9A;
+                }
+            }
+        }
+    }
+}
+
+.tracks {
+    width: 100%;
+    margin-top: 15px;
+    .container {
+        width: 91%;
+        margin: auto;
+        .judul {
+            p {
+                font-weight: 900;
+                font-size: .9rem;
+                color: crimson;
+            }
+        }
+        .list {
+            margin-top: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .number {
+                    font-weight: 600;
+                    font-size: .9rem;
+                }
+                .img {
+                    padding: 2px 15px;
+                    .gmbr {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 5px;
+                    }
+                }
+                .song {
+                    h4 {
+                        font-size: .8rem;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                    p {
+                        font-size: .7rem;
+                        color: #9A9A9A;
+                    }
+                }
+            }
+            .right {
+                font-weight: bold;
+                padding: 5px;
+                span {
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+// list tracks
+.list-1{
+    .left {
+        .img {
+            margin-left: 3px;
+        }
+    }
+}
+
+.navbar {
+    background-color: white;
+    position: fixed;
+    z-index: 100000000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 5px;
+    box-shadow: 0 -1px 8px rgba(0,0,0,0.5);
+    cursor: pointer;
+    .list {
+        margin: auto;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            .logo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                li {
+                    color: #777777;
+                    margin-top: -3px;
+                    font-size: .7rem;
+                    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                }
+            }
+        }
+    }
+}
+
+
+
+// SONG
+// song 
+.body-song {
+    height: max-content;
+}
+.album {
+    margin-top: 5px;
+    width: 100%;
+    .container {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left {
+            padding: 5px;
+            margin-top: 5px;
+            color: black;
+            border-radius: 5px;
+        }
+        .teks {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p {
+                font-size: .6rem;
+                color: crimson;
+                font-weight: bold;
+            }
+            h4 {
+                font-size: .8rem;
+            }
+        }
+        .right {
+            padding: 5px;
+            margin-top: 5px;
+            color: black;
+            border-radius: 5px;
+        }
+    }
+}
+
+.card-lagu {
+    margin-top: 30px;
+    width: 100%;
+    .container-lagu {
+        width: 90%;
+        margin: auto;
+        .img {
+            margin: auto;
+            border-radius: 10px;
+            width: 270px;
+            height: 290px;
+            border: 1px solid black;
+        }
+    }
+}
+
+.judul {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .container-judul {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .judul-lagu {
+            p {
+                font-size: .8rem;
+                color: #777777;
+                font-weight: bold;
+            }
+        }
+        // .icons-love {
+        //     svg {
+        //         background-color: crimson;
+        //     }
+        // }
+    }
+}
+
+.song {
+    width: 90%;
+    margin: auto;
+    #position-slider {
+        width: 100%;
+        height: 5px;
+    }
+    .menit {
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: .7rem;
+        font-weight: bold;
+    }
+}
+
+.btn-song {
+    padding-top: 30px;
+    // border: 1px solid black;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.swipe {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    svg {
+        font-weight: bolder;
+    }
+    p {
+        color: crimson;
+        font-size: .7rem;
+        font-weight: bold;
+    }
+}
