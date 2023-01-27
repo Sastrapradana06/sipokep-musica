@@ -30,6 +30,7 @@ playButton.addEventListener("click", function() {
 
 // range lagu
 var positionSlider = document.getElementById("position-slider");
+positionSlider.value = 0;
 positionSlider.max = audio.duration;
 
 audio.addEventListener("timeupdate", function(){
