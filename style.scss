@@ -353,6 +353,16 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    .btn-start {
+        a {
+            color: black;
+        }
+    }
+    .btn-end {
+        a {
+            color: black;
+        }
+    }
 }
 
 .swipe {
@@ -370,4 +380,8 @@ body {
         font-size: .7rem;
         font-weight: bold;
     }
+}
+
+.love {
+    color: crimson;
 }

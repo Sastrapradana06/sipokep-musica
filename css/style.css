@@ -464,6 +464,14 @@ body {
           justify-content: space-between;
 }
 
+.btn-song .btn-start a {
+  color: black;
+}
+
+.btn-song .btn-end a {
+  color: black;
+}
+
 .swipe {
   padding-top: 30px;
   width: 100%;
@@ -490,5 +498,9 @@ body {
   color: crimson;
   font-size: .7rem;
   font-weight: bold;
+}
+
+.love {
+  color: crimson;
 }
 /*# sourceMappingURL=style.css.map */
